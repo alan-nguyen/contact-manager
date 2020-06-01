@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Contact extends Component {
   state = {
-    showContactInfo: true,
+    showContactInfo: false,
   };
 
   static propTypes = {
@@ -22,6 +22,7 @@ class Contact extends Component {
               this.setState({ showContactInfo: !this.state.showContactInfo });
             }}
             className="fas fa-sort-down"
+            style={{ cursor: 'pointer' }}
           ></i>
         </h4>
         {showContactInfo ? (
