@@ -27,6 +27,7 @@ class Contact extends Component {
           <i
             className="fas fa-times"
             style={{ cursor: 'pointer', float: 'right', color: 'red' }}
+            onClick={onDeleteClick}
           ></i>
         </h4>
         {showContactInfo ? (
