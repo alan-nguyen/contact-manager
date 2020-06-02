@@ -45,6 +45,11 @@ class Contact extends Component {
   }
 }
 
+Contact.propTypes = {
+  contact: PropTypes.object.isRequired,
+  deleteClickHandler: PropTypes.func.isRequired,
+};
+
 // Contact.propTypes = {
 //   name: PropTypes.string.isRequired,
 //   email: PropTypes.string.isRequired,
