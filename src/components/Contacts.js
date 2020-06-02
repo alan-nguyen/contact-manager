@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Contact from './Contact';
 
 class Contacts extends Component {
-  constructor() {
-    super();
-  }
-
   deleteContact = (id) => {
     const { contacts } = this.state;
 
