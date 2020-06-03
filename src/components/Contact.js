@@ -20,6 +20,7 @@ class Contact extends Component {
     return (
       <Consumer>
         {(value) => {
+          const { dispatch } = value;
           return (
             <div className="card card-body mb-3">
               <h4>
@@ -36,7 +37,7 @@ class Contact extends Component {
                 <i
                   className="fas fa-times"
                   style={{ cursor: 'pointer', float: 'right', color: 'red' }}
-                  onClick={this.onDeleteClick}
+                  onClick={this.onDeleteClick.bind(this, id, dispatch)}
                 ></i>
               </h4>
               {showContactInfo ? (
