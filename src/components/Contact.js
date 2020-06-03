@@ -7,14 +7,16 @@ class Contact extends Component {
     showContactInfo: false,
   };
 
-  onDeleteClick = () => {};
+  onDeleteClick = (id, dispatch) => {
+    dispatch({ type: 'DELETE_CONTACT', payload: id });
+  };
 
   static propTypes = {
     contact: PropTypes.object.isRequired,
   };
 
   render() {
-    const { name, email, phone } = this.props.contact;
+    const { id, name, email, phone } = this.props.contact;
     const { showContactInfo } = this.state;
 
     return (
