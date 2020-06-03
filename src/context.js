@@ -38,6 +38,9 @@ export class Provider extends Component {
         phone: '444-444-4444',
       },
     ],
+    dispatch: (action) => {
+      this.setState((state) => reducer(state, action));
+    },
   };
 
   render() {
