@@ -22,6 +22,15 @@ class AddContact extends Component {
                 placeholder="Enter Name..."
               />
             </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                className="form-control form-control-lg"
+                placeholder="Enter Email..."
+              />
+            </div>
           </form>
         </div>
       </div>
