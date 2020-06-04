@@ -9,8 +9,21 @@ class AddContact extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Add Contact</h1>
+      <div className="card mb-3">
+        <div className="card-header">Add Contact</div>
+        <div className="card-body">
+          <form>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                className="form-control form-control-lg"
+                placeholder="Enter Name..."
+              />
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
