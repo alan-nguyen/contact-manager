@@ -26,7 +26,7 @@ class AddContact extends Component {
             <div className="card mb-3">
               <div className="card-header">Add Contact</div>
               <div className="card-body">
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit.bind(this, dispatch)}>
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
                     <input
