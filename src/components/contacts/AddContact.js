@@ -19,12 +19,15 @@ class AddContact extends Component {
     // Check For Errors
     if (name === '') {
       this.setState({ errors: { name: 'Name is required' } });
+      return;
     }
     if (email === '') {
       this.setState({ errors: { email: 'Email is required' } });
+      return;
     }
     if (phone === '') {
       this.setState({ errors: { phone: 'Phone is required' } });
+      return;
     }
 
     const newContact = {
