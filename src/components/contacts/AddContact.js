@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Consumer } from '../../context';
+import uuid from 'uuid';
 
 class AddContact extends Component {
   state = {
@@ -8,9 +9,16 @@ class AddContact extends Component {
     phone: '',
   };
 
-  onSubmit = (e) => {
+  onSubmit = (dispatch, e) => {
     e.preventDefault();
-    console.log(this.state);
+
+    const { name, email, phone } = this.state;
+
+    const newContact = {
+      name,
+      email,
+      phone,
+    };
   };
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
