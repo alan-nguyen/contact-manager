@@ -24,4 +24,13 @@ const TextInputGroup = ({
   );
 };
 
+TextInputGroup.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  onChange: PropTypes.string.isRequired,
+};
+
 export default TextInputGroup;
