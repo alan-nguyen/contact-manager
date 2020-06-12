@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Contact from './Contact';
 import { Consumer } from '../../context';
+import axios from 'axios';
 
 class Contacts extends Component {
   render() {
